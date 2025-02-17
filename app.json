@@ -1,28 +1,40 @@
 {
   "expo": {
-    "name": "OSINT",
-    "slug": "OSINT",
+    "name": "OSINT Recon",
+    "slug": "osint-recon",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#121212"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "splash": {
+        "backgroundColor": "#121212",
+        "resizeMode": "contain",
+        "image": "./assets/transparent.png"
+      },
+      "bundleIdentifier": "com.yourcompany.osintrecon"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#121212"
+      },
+      "package": "com.yourcompany.osintrecon",
+      "permissions": [
+        "INTERNET"
+      ]
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "extra": {
+      "eas": {
+        "projectId": "8817bdac-57ef-4463-9428-74df45857db5"
+      }
     }
   }
 }
